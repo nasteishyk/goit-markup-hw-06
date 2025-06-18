@@ -539,6 +539,13 @@ img {
   color: #434455;
 }
 
+@media (min-width: 768px) and (max-width: 1158px) {
+  .our-team-container-tablet {
+    padding-left: 108px;
+    padding-right: 108px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .our-team-list {
     flex-direction: row;
@@ -548,7 +555,7 @@ img {
   }
 
   .our-team-person {
-    width: calc((100% - 64px) / 2);
+    width: calc((100% - 24px) / 2);
   }
 
   .person-img {
@@ -563,7 +570,7 @@ img {
   }
 
   .our-team-person {
-    width: calc((100% - 24px) / 4);
+    width: calc((100% - 72px) / 4);
   }
 }
 
@@ -671,13 +678,13 @@ img {
 /* --- FOOTER --- */
 .footer {
   background-color: #2e2f42;
+  padding: 96px 0;
 }
 
 .footer-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 96px 0;
   gap: 72px;
 }
 
@@ -795,7 +802,7 @@ img {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
-    margin: 0 auto;
+    margin-left: 108px;
     column-gap: 24px;
   }
 
@@ -836,10 +843,15 @@ img {
 }
 
 @media screen and (min-width: 1158px) {
+  .footer {
+    padding: 100px 0;
+  }
+
   .footer-container {
     flex-wrap: nowrap;
     align-items: baseline;
     margin: 0 auto;
+    gap: 0;
   }
 
   .footer-logo-p {
@@ -1071,7 +1083,7 @@ img {
   }
 }
 
-/* --- MOBILE HEADER   MODAL --- */
+/* --- MOBILE HEADER MODAL --- */
 .mobile-container {
   position: fixed;
   top: 0;
